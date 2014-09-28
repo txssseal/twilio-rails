@@ -1,5 +1,9 @@
 TwilioRails::Application.routes.draw do
 
+  get 'calls/index'
+
+  post 'calls/create_call'
+
   devise_for :users, controllers: {registrations: 'registrations'}
 
   # Authentication
@@ -53,5 +57,5 @@ TwilioRails::Application.routes.draw do
     resources :email_logs
   end
 
-  root 'home#index'
+  root 'calls#index'
 end

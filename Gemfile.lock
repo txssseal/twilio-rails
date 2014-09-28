@@ -139,6 +139,8 @@ GEM
     jquery-ui-rails (5.0.0)
       railties (>= 3.2.16)
     json (1.8.1)
+    jwt (0.1.11)
+      multi_json (>= 1.5)
     kaminari (0.16.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -227,6 +229,10 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    twilio-ruby (3.11.6)
+      builder (>= 2.1.2)
+      jwt (>= 0.1.2)
+      multi_json (>= 1.3.0)
     twitter-bootstrap-rails (3.2.0)
       actionpack (~> 4.1)
       execjs (~> 2.2)
@@ -269,5 +275,6 @@ DEPENDENCIES
   spring
   sprockets-rails!
   thin
+  twilio-ruby
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)

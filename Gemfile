@@ -55,6 +55,8 @@ gem 'rails_12factor'
 # for email validation
 gem 'email_validator'
 
+gem 'twilio-ruby'
+
 group :development do
 
   # mutes assets pipeline log messages
