@@ -18,7 +18,7 @@ common:
   url_with_port: http://lvh.me:3000
 
   mailer:
-    default_from_email: "'Wheel' <notifications@wheel.com>"
+    default_from_email: "'TwilioRails' <notifications@twiliorails.com>"
     host_for_email_with_www: www.localhost:3000
     delivery_method: test
     smtp_settings:
@@ -50,20 +50,20 @@ development:
 
 staging:
   mailer:
-    host_for_email_with_www: www.wheel.net
+    host_for_email_with_www: www.twiliorails.net
     delivery_method: :smtp
 
     smtp_settings:
       user_name: <%=ENV['MANDRILLAPP_USERNAME']%>
       password: <%=ENV['MANDRILLAPP_PASSWORD']%>
-      domain: www.wheel.com
+      domain: www.twiliorails.com
       address: smtp.mandrillapp.com
       port: 587
       authentication: plain
       enable_starttls_auto: true
 
-  host: wheel.com
-  url_with_port: http://wheel.com
+  host: twiliorails.com
+  url_with_port: http://twiliorails.com
   intercepted_emails:
     - john@example.com
     - adam@example.com
@@ -71,21 +71,21 @@ staging:
     support@example.com
 
 production:
-  bcc: hello.wheel@gmail.com
+  bcc: hello.twiliorails@gmail.com
   mailer:
-    host_for_email_with_www: www.wheel.com
+    host_for_email_with_www: www.twiliorails.com
     delivery_method: :smtp
 
     smtp_settings:
       user_name: <%=ENV['MANDRILLAPP_USERNAME']%>
       password: <%=ENV['MANDRILLAPP_PASSWORD']%>
-      domain: www.wheel.com
+      domain: www.twiliorails.com
       address: smtp.mandrillapp.com
       port: 587
       authentication: plain
       enable_starttls_auto: true
 
-  host: www.wheel.com
-  url_with_port: http://wheel.com
+  host: www.twiliorails.com
+  url_with_port: http://twiliorails.com
   support_email:
     support@example.com
